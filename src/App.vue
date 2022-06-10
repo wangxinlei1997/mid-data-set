@@ -2,7 +2,7 @@
  * @Author: 王欣磊
  * @Date: 2022-06-10 09:53:40
  * @LastEditors: 王欣磊
- * @LastEditTime: 2022-06-10 12:32:58
+ * @LastEditTime: 2022-06-10 13:52:32
  * @Description: 
  * @FilePath: /mmsi-demo-v3/src/App.vue
 -->
@@ -332,10 +332,24 @@ const filter = ref("");
 </script>
 
 <template>
-  <h1>MMSI国旗对照表</h1>
-  <div style="display: flex; align-items: center">
-    <span style="margin-right: 10px">过滤:</span>
-    <input v-model="filter" placeholder="请输入mmsi" />
+  <div
+    style="
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      background: #c3c3c3;
+      width: 100vw;
+      padding: 10px;
+      z-index: 99;
+    "
+  >
+    <h1>MMSI国旗对照表</h1>
+    <div style="display: flex; align-items: center">
+      <span style="margin-right: 10px">过滤:</span>
+      <input v-model="filter" placeholder="请输入mmsi" />
+    </div>
   </div>
   <table style="margin-top: 20px">
     <tr>
@@ -376,7 +390,6 @@ const filter = ref("");
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
