@@ -2,7 +2,7 @@
  * @Author: 王欣磊
  * @Date: 2022-06-10 09:53:40
  * @LastEditors: 王欣磊
- * @LastEditTime: 2022-06-10 13:52:32
+ * @LastEditTime: 2022-06-10 14:30:30
  * @Description: 
  * @FilePath: /mmsi-demo-v3/src/App.vue
 -->
@@ -345,7 +345,7 @@ const filter = ref("");
       z-index: 99;
     "
   >
-    <h1>MMSI国旗对照表</h1>
+    <h1>MMSI对照表</h1>
     <div style="display: flex; align-items: center">
       <span style="margin-right: 10px">过滤:</span>
       <input v-model="filter" placeholder="请输入mmsi" />
