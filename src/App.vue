@@ -2,7 +2,7 @@
  * @Author: 王欣磊
  * @Date: 2022-06-10 09:53:40
  * @LastEditors: 王欣磊
- * @LastEditTime: 2022-06-10 15:07:08
+ * @LastEditTime: 2022-06-10 15:13:13
  * @Description: 
  * @FilePath: /mmsi-demo-v3/src/App.vue
 -->
@@ -29,8 +29,8 @@ const getNationDataByMMSI = function (mmsi: string): {
       name: nationCode["HN" as keyof typeof nationCode] || "未知",
     };
   }
-  if(mmsi.toString().startsWith("550")){
-        return {
+  if (mmsi.toString().startsWith("550")) {
+    return {
       code: "TL",
       flagCode: "TL",
       enName: "Timor-Leste (Democratic Republic of)",
@@ -65,7 +65,7 @@ const mmsis = [
   650, 654, 655, 656, 657, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668,
   669, 670, 671, 672, 674, 675, 676, 677, 678, 679, 701, 710, 720, 725, 730,
   735, 740, 745, 750, 755, 760, 765, 770, 775,
-].map(_=>_.toString());
+].map((_) => _.toString());
 const filter = ref("");
 </script>
 
