@@ -2,7 +2,7 @@
  * @Author: 王欣磊
  * @Date: 2022-06-10 10:26:13
  * @LastEditors: 王欣磊
- * @LastEditTime: 2022-06-10 11:59:11
+ * @LastEditTime: 2022-06-10 15:08:10
  * @Description:
  * @FilePath: /mmsi-demo-v3/src/data/nationCode.ts
  */
@@ -258,6 +258,6 @@ export default {
   "TF-SP": "圣保罗和阿姆斯特丹群岛",
   "SH-AC": "阿森松岛",
   "TF-KI": "凯尔盖朗群岛",
-  'SH-HL':'圣赫勒拿岛',
-  'TF-CA':'克罗泽特群岛'
+  'SH-HL': '圣赫勒拿岛',
+  'TF-CA': '克罗泽特群岛',
 };
