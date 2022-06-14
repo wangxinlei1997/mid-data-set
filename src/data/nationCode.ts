@@ -2,7 +2,7 @@
  * @Author: 王欣磊
  * @Date: 2022-06-10 10:26:13
  * @LastEditors: 王欣磊
- * @LastEditTime: 2022-06-10 15:08:10
+ * @LastEditTime: 2022-06-14 10:18:10
  * @Description:
  * @FilePath: /mmsi-demo-v3/src/data/nationCode.ts
  */
@@ -160,7 +160,7 @@ export default {
   NA: "纳米比亚",
   NR: "瑙鲁",
   NP: "尼泊尔",
-  NL: "荷兰人",
+  NL: "荷兰",
   AN: "荷属西印度群岛",
   NC: "新喀里多尼亚",
   NZ: "新西兰",
@@ -185,7 +185,7 @@ export default {
   PT: "葡萄牙",
   PR: "波多黎各",
   QA: "卡塔尔",
-  RE: "会议",
+  RE: "留尼汪",
   RO: "罗马尼亚",
   RU: "俄罗斯",
   RW: "卢旺达",
@@ -229,7 +229,7 @@ export default {
   TO: "汤加",
   TT: "特立尼达和多巴哥",
   TN: "突尼斯",
-  TR: "火鸡",
+  TR: "土耳其",
   TM: "土库曼斯坦",
   TC: "特克斯和凯科斯群岛",
   TV: "图瓦卢",
