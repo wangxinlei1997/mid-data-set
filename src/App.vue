@@ -2,7 +2,7 @@
  * @Author: 王欣磊
  * @Date: 2022-06-10 09:53:40
  * @LastEditors: 王欣磊
- * @LastEditTime: 2022-06-10 15:13:13
+ * @LastEditTime: 2022-06-15 17:37:41
  * @Description: 
  * @FilePath: /mmsi-demo-v3/src/App.vue
 -->
@@ -122,24 +122,35 @@ const filter = ref("");
 </template>
 
 <style>
+body {
+  margin: 0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+
+  color: #2c3e50;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
+
 table {
-  border-collapse: collapse;
   border-spacing: 0;
+  border-collapse: collapse;
 }
+
 td,
 th {
-  border: 1px solid #ccc;
-
   padding: 5px 10px;
+
+  border: 1px solid #ccc;
 }
+
 </style>
