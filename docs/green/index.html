@@ -2,9 +2,9 @@
  * @Author: 王欣磊
  * @Date: 2022-11-07 10:28:09
  * @LastEditors: 王欣磊
- * @LastEditTime: 2022-11-07 12:46:16
+ * @LastEditTime: 2022-11-07 13:05:04
  * @Description: 
- * @FilePath: /green/index.html
+ * @FilePath: /mid-data-set/docs/green/index.html
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +13,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <title>Document</title>
 </head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
@@ -34,7 +36,11 @@
         src: url('./PingFang SC.ttf') format('truetype');
         /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
     }
-
+    html,body{
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
 
     .container {
         width: 100vw;
@@ -51,7 +57,7 @@
 
     .timer {
         position: absolute;
-        top:51vw;
+        top: 51vw;
         font-size: 8.37209302vw;
         font-weight: bold;
         color: #363E50;
@@ -89,6 +95,20 @@
     </div>
 </body>
 <script>
+    window.addEventListener('DOMContentLoaded', function () {
+        var page = document.getElementById('page'),
+            nav = window.navigator,
+            ua = nav.userAgent,
+            isFullScreen = nav.standalone;
+        if (ua.indexOf('Android') !== -1) {
+            // 56对应的是Android Browser导航栏的高度
+            page.style.height = window.innerHeight + 56 + 'px';
+        } else if (/iPhone|iPod|iPad/.test(ua)) {
+            // 60对应的是Safari导航栏的高度
+            page.style.height = window.innerHeight + (isFullScreen ? 0 : 60) + 'px'
+        }
+        setTimeout(scrollTo, 0, 0, 1);
+    }, false);
     const dom = document.getElementById('timer')
     dom.innerHTML = moment().format('MM-DD HH:mm:ss')
     setInterval(() => {
