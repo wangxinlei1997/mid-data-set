@@ -2,7 +2,7 @@
 
 > **🎉🎉 MMSI 与中英文名、国旗的对照表**
 
-- 👨🏻‍💻 在线访问: https://wangxinlei1997.github.io/mid-data-set/
+- 👨🏻‍💻 在线访问: https://demos.xiaob.work/mid-data-set/
 - 🐞 如有错误恳请提交 ISSUE
 
 ---
